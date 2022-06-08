@@ -1,0 +1,74 @@
+.main{
+    margin-bottom: 7%;
+    align-items: center;
+    justify-content: center;
+}
+.leftPost .mainImg{
+    margin-left: 5%;
+    width: 45vw;
+    border: 1px solid green;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+.rightPost .mainImg{
+    margin-left: 2%;
+    width: 45vw;
+    height: 100%;
+    border: 1px solid green;
+    margin-bottom: 5%;
+}
+.leftPost{
+    display: flex;
+}
+.leftPost .description{
+    width: 45vw;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.general p{
+    display: flex;
+    justify-content: center;
+}
+.rightPost{
+    display: flex;
+}
+.rightPost .description{
+    width: 45vw;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.name{
+    font-size: xx-large;
+    color: black;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+.shortDesc{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.05rem;
+    
+}
+.longDesc{
+    color: grey;
+}
+.description h2{
+    color: green;
+    display: flex;
+    justify-content: center;
+}.regulation{
+    height: 5vw;
+}
+
+@media screen and (max-width: 1060px) {
+    .shortDesc{
+        font-size: 0.7rem;
+    }
+}

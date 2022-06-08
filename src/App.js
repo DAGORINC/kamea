@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Kruszywa from './components/Templates/Kruszywa/Kruszywa';
+import Wegiel from './components/Templates/Wegiel/Wegiel';
+import Contact from './components/Contact/Contact';
+import About_us from './components/About_us/About_us';
+import Find_us from './components/Find_us/Find_us';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="generalView">
+      <Navbar />
+      <Header />
+      <Kruszywa />
+      <Wegiel />
+      </div>
     </div>
   );
 }

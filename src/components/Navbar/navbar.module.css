@@ -1,0 +1,72 @@
+.nav{
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 80, 0, 0.649);
+    color: white;
+    font-size: large;
+    height: 10%;
+    width: 100%;
+}
+.menu{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.menu ul{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+}
+.carImg{
+    height: 4vw;
+    max-width: 40vw;
+}
+.subtitleImg{
+    height: 1.3vw;
+    max-width: 40vw;
+}
+.partLink{
+    text-decoration: none;
+    color: white;
+}
+.menulist{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1060px) {
+    body{
+        font-size: 0.6rem;
+    }
+    .nav ul{
+        visibility: collapse;
+        width: 0;
+        justify-content: center;
+    }
+    .menu{
+        justify-content: end;
+        display: flex;
+    }
+    .menulist{
+        visibility: visible;
+        margin-right: 2vw;
+        max-height: 50%;
+        
+    }
+    .carImg{
+        justify-content: start;
+        height: 3rem;
+    }
+    .subtitleImg{
+        height: 1.2rem;
+    }
+    .nav .aText{
+        margin-right: auto;
+    }
+  }
