@@ -14,7 +14,6 @@
 .rightPost .mainImg{
     margin-left: 2%;
     width: 45vw;
-    height: 100%;
     border: 1px solid green;
     margin-bottom: 5%;
 }
@@ -64,11 +63,43 @@
     display: flex;
     justify-content: center;
 }.regulation{
-    height: 5vw;
+    height: 10vh;
 }
 
 @media screen and (max-width: 1060px) {
     .shortDesc{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
+    .leftPost{
+        display: grid;
+        grid-template-rows: 2;
+    }
+    .leftPost .description{
+        grid-row: 1/2;
+        width: 90%;
+        margin: 0 auto 1% auto;
+    }
+    .leftPost .mainImg{
+        grid-row: 2/3;
+        width: 90%;
+        margin: 0 auto 5% auto;
+    }
+    
+    .rightPost{
+        display: grid;
+        grid-template-rows: 2;
+    }
+    .rightPost .description{
+        grid-row: 1/2;
+        width: 90%;
+        margin: 0 auto 1% auto;
+    }
+    .rightPost .mainImg{
+        grid-row: 2/3;
+        width: 90%;
+        margin: 0 auto 5% auto;
+    }
+
+
+    
 }

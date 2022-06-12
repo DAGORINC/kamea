@@ -8,15 +8,11 @@ function Navbar() {
     return (
         <div className={styles.nav}>
             <div className={styles.menu}>
-                
                 <a href="#"><img src={carImg} className={styles.carImg}/></a>
                 <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg}/></a>
                 <ul>
                     <li className={styles.listPart}>
                         <a href="#kruszywa" className={styles.partLink}>Kruszywa</a>
-                    </li>
-                    <li className={styles.listPart}>
-                    <a href="#wegiel" className={styles.partLink}>Węgiel</a>
                     </li>
                     <li className={styles.listPart}>
                     <a href="#aboutus" className={styles.partLink}>O nas</a>

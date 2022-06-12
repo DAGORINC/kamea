@@ -15,7 +15,6 @@ function App() {
       <Navbar />
       <Header />
       <Kruszywa />
-      <Wegiel />
       </div>
     </div>
   );

@@ -32,15 +32,15 @@ export default function Kruszywa() {
             <div className={styles.regulation} id="kruszywa">
 
             </div>
-        <div className={styles.general}>
-            <p className={styles.name}>KRUSZYWA</p>
-            <div className={styles.main} >
-                <LeftPost image={k3} description={desc1} />
-                <RightPost image={k4} description={desc2} />
-                <LeftPost image={k3} description={desc1} />
-                <RightPost image={k4} description={desc2} />
+            <div className={styles.general}>
+                <p className={styles.name}>KRUSZYWA</p>
+                <div className={styles.main} >
+                    <LeftPost image={k3} description={desc1} />
+                    <RightPost image={k4} description={desc2} />
+                    <LeftPost image={k3} description={desc1} />
+                    <RightPost image={k4} description={desc2} />
+                </div>
             </div>
-        </div>
         </div>
     );
 }

@@ -4,7 +4,7 @@
     background-color: rgba(0, 80, 0, 0.649);
     color: white;
     font-size: large;
-    height: 10%;
+    height: 10vh;
     width: 100%;
 }
 .menu{
@@ -69,4 +69,5 @@
     .nav .aText{
         margin-right: auto;
     }
+    
   }
