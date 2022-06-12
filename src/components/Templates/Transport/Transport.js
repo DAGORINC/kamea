@@ -4,6 +4,7 @@ export default function Transport(){
     return(
         <div id="transport" className={styles.container}>
 
+            <div className={styles.regulation}/>
 
             <div className={styles.name}>
             <p>Transport</p>

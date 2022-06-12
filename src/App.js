@@ -18,6 +18,7 @@ function App() {
       <Kruszywa />
       <Nawozy />
       <Transport />
+      <Find_us />
       </div>
     </div>
   );

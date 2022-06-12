@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.map{
+    width: 90%;
+    height: 70vh;
+}
+.nameFrame{
+    display: flex;
+    justify-content: center;
+}
+.name{
+    font-size: 2rem;
+    padding: 0 1% 0 1%;
+}
+.regulation{
+    height: 10vh;
+}
+.adres{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 1%;
+    margin-bottom: 10%;
+}
