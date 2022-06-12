@@ -15,6 +15,12 @@ function Navbar() {
                         <a href="#kruszywa" className={styles.partLink}>Kruszywa</a>
                     </li>
                     <li className={styles.listPart}>
+                        <a href="#nawozy" className={styles.partLink}>Nazowy</a>
+                    </li>
+                    <li className={styles.listPart}>
+                        <a href="#transport" className={styles.partLink}>Transport</a>
+                    </li>
+                    <li className={styles.listPart}>
                     <a href="#aboutus" className={styles.partLink}>O nas</a>
                     </li>
                     <li className={styles.listPart}>

@@ -1,0 +1,15 @@
+.container{
+}
+.name{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5%;
+    font-size: xx-large;
+}
+.themeImg{
+    max-width: 60%;
+}
+.post{
+    display: flex;
+    justify-content: center;
+}
