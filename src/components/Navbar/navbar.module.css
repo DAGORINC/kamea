@@ -3,8 +3,8 @@
     display: flex;
     background-color: rgba(0, 80, 0, 0.649);
     color: white;
-    font-size: large;
-    height: 10vh;
+    font-size: medium;
+    height: 7vh;
     width: 100%;
 }
 .menu{
@@ -24,7 +24,7 @@
     list-style: none;
 }
 .carImg{
-    height: 4vw;
+    height: 8vh;
     max-width: 40vw;
 }
 .subtitleImg{
