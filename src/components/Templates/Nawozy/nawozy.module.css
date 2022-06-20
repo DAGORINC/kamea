@@ -10,12 +10,14 @@
     margin-bottom: 5%;
     display: flex;
     align-items: center;
+    box-shadow: 4px 5px 7px 0px rgb(30, 30, 30);
 }
 .rightPost .mainImg{
     margin-left: 2%;
     width: 45vw;
     border: 1px solid green;
     margin-bottom: 5%;
+    box-shadow: 4px 5px 7px 0px rgb(30, 30, 30);
 }
 .leftPost{
     display: flex;
@@ -47,23 +49,33 @@
     font-size: xx-large;
     color: black;
     align-items: center;
-    padding-bottom: 2vw;
+    padding-bottom: 0vw;
 }
 .shortDesc{
     color: black;
     font-weight: bolder;
     font-size: 1.05rem;
+    text-align: center;
     
+}
+.transport{
+    font-size: 1.1rem;
+    padding: 6px;
+    padding-bottom: 3vw;
+
 }
 .longDesc{
     color: grey;
+    font-size: 0.95rem;
+    text-align: justify;
 }
 .description h2{
     color: green;
     display: flex;
     justify-content: center;
-}.regulation{
-    height: 10vh;
+}
+.regulation{
+    height: 7vh;
 }
 
 @media screen and (max-width: 1060px) {
@@ -73,6 +85,7 @@
     .leftPost{
         display: grid;
         grid-template-rows: 2;
+        margin-bottom: 8%;
     }
     .leftPost .description{
         grid-row: 1/2;
@@ -88,6 +101,7 @@
     .rightPost{
         display: grid;
         grid-template-rows: 2;
+        margin-bottom: 8%;
     }
     .rightPost .description{
         grid-row: 1/2;
@@ -98,6 +112,10 @@
         grid-row: 2/3;
         width: 90%;
         margin: 0 auto 5% auto;
+    }
+    .transport{
+        font-size: 0.95rem;
+        text-align: center;
     }
 
 

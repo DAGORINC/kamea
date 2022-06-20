@@ -18,10 +18,10 @@ function Navbar() {
                         <a href="#nawozy" className={styles.partLink}>Nazowy</a>
                     </li>
                     <li className={styles.listPart}>
-                        <a href="#transport" className={styles.partLink}>Transport</a>
+                        <a href="#ziemia" className={styles.partLink}>Ziemia</a>
                     </li>
                     <li className={styles.listPart}>
-                    <a href="#aboutus" className={styles.partLink}>O nas</a>
+                        <a href="#transport" className={styles.partLink}>Transport</a>
                     </li>
                     <li className={styles.listPart}>
                     <a href="#findus" className={styles.partLink}>Gdzie nas szukać</a>
