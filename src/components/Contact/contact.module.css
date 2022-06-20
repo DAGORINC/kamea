@@ -1,0 +1,42 @@
+.main{
+    padding: 1% 10% 1% 10%;
+    background-color: rgba(0, 80, 0, 0.649);
+    height: 60vh;
+    margin-bottom: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile{
+    padding: 3%;
+    background-color: antiquewhite;
+    height: 90%;
+    width: 27%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+}
+.regulation{
+    height: 7vh;
+}
+.name{
+    height: 30%;
+    width: 100%;
+}
+.contact{
+    list-style: none;
+    height: 30%;
+    width: 100%;
+}
+li{
+    color: green;
+}
+.bigPhone{
+    width: 8vw;
+
+}
+.bigEmail{
+    width: 8vw;
+}

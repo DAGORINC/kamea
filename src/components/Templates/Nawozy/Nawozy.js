@@ -1,6 +1,6 @@
 import styles from './nawozy.module.css';
-import k3 from '../../../assets/images/k3.jpg';
-import k4 from '../../../assets/images/k4.jpg';
+import i3 from '../../../assets/images/k3.jpg';
+import i4 from '../../../assets/images/k4.jpg';
 
 function LeftPost(props) {
     return (
@@ -33,12 +33,12 @@ export default function Nawozy() {
                 <p className={styles.name}>Nawozy</p>
                 <p className={styles.transport}></p>
                 <div className={styles.main}>
-                    <LeftPost image={k3} description={desc1} />
-                    <RightPost image={k4} description={desc2} />
-                    <LeftPost image={k3} description={desc3} />
-                    <RightPost image={k4} description={desc4} />
-                    <LeftPost image={k3} description={desc5} />
-                    <RightPost image={k4} description={desc6} />
+                    <LeftPost image={i3} description={desc1} />
+                    <RightPost image={i4} description={desc2} />
+                    <LeftPost image={i3} description={desc3} />
+                    <RightPost image={i4} description={desc4} />
+                    <LeftPost image={i3} description={desc5} />
+                    <RightPost image={i4} description={desc6} />
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@ const desc5 = (
 );
 const desc6 = (
     <div>
-        <h2>Obornik bydlęcy</h2>
+        <h2>Obornik popieczarkowy</h2>
         <p className={styles.shortDesc}>Popieczarkowy to nazwa przekompostowanego podłoża popieczarkowego</p>
         <p className={styles.longDesc}> Średnio jeden metr sześcienny świeżego podłoża to odpowiednik 2,3 obornika bydlęcego, dodatkowo nie zawiera siewek chwastów. Mimo że produkt sam w sobie jest odpadem, może skutecznie pomóc nam w uzupełnieniu braków wspomnianej materii organicznej, jak i wnieść znaczne ilości NPK i mikroskładników. . Rozkłada się szybko i wydziela sporo ciepła, dlatego jest świetny zwłaszcza do przydomowej szklarni. Azotu zawiera zwykle więcej niż nawóz krów. Dzięki temu, że  nie ma zbyt intensywnego zapachu,jest lepszy niż kurzak
         </p>

@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import About_us from './components/About_us/About_us';
 import Find_us from './components/Find_us/Find_us';
 import Transport from './components/Templates/Transport/Transport';
+import Ziemia from './components/Templates/Ziemia/Ziemia';
 
 
 function App() {
@@ -17,8 +18,10 @@ function App() {
       <Header />
       <Kruszywa />
       <Nawozy />
+      <Ziemia />
       <Transport />
       <Find_us />
+      <Contact />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
 .name{
     display: flex;
     justify-content: center;
-    padding-bottom: 2.5%;
+    padding-bottom: 0.5%;
     font-size: xx-large;
 }
 .themeImg{
@@ -15,4 +15,10 @@
 }
 .regulation{
     height: 7vh;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    padding: 0 5% 2% 5%;
+    text-align: justify;
 }

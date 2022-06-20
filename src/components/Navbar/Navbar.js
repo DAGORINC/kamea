@@ -27,7 +27,7 @@ function Navbar() {
                     <a href="#findus" className={styles.partLink}>Gdzie nas szukać</a>
                     </li>
                     <li className={styles.listPart}>
-                    <a href="contact" className={styles.partLink}>Kontakt</a>
+                    <a href="#contact" className={styles.partLink}>Kontakt</a>
                     </li>
                 </ul>
             <img  className={styles.menulist} src={menuIcon} />
