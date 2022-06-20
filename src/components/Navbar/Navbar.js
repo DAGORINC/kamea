@@ -15,7 +15,7 @@ function Navbar() {
                         <a href="#kruszywa" className={styles.partLink}>Kruszywa</a>
                     </li>
                     <li className={styles.listPart}>
-                        <a href="#nawozy" className={styles.partLink}>Nazowy</a>
+                        <a href="#nawozy" className={styles.partLink}>Nawozy</a>
                     </li>
                     <li className={styles.listPart}>
                         <a href="#ziemia" className={styles.partLink}>Ziemia</a>
