@@ -12,7 +12,7 @@ function Find_us() {
                 
             </div>
             <div className={styles.adres}>
-            <b>05-077 Zakręt Trakt Brzeski 33 - Skład kruszyw i ziemi ogrodowej</b>
+            <p className={styles.underMap}>05-077 Zakręt Trakt Brzeski 33 - Skład kruszyw i ziemi ogrodowej</p>
             </div>
         </div>
     );

@@ -25,7 +25,8 @@
     padding-top: 1%;
     margin-bottom: 10%;
 }
-b{
+.underMap{
     text-align: center;
-    height: 10vh;
+    font-size: 1.9rem;
+    
 }
