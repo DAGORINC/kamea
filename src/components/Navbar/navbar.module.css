@@ -41,6 +41,9 @@
     margin: 0;
     padding: 0;
 }
+.partLink:hover{
+    color: rgb(255, 205, 139);
+}
 @media screen and (max-width: 1060px) {
     body{
         font-size: 1rem;
@@ -58,7 +61,6 @@
         visibility: visible;
         margin-right: 2vw;
         max-height: 50%;
-        
     }
     .carImg{
         justify-content: start;
@@ -72,3 +74,16 @@
     }
     
   }
+
+  /* mobile configuration */
+  .mobileMain{
+    height: 100vh;
+    width: 70vw;
+    position: fixed;
+    z-index: 1000;
+    background-color: aqua;
+    visibility: hidden;
+  }
+  .menulist:active{
+    visibility: visible;
+}

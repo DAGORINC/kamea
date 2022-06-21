@@ -5,6 +5,7 @@
 .map{
     width: 90%;
     height: 70vh;
+    border-radius: 10px;
 }
 .nameFrame{
     display: flex;

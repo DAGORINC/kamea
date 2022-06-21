@@ -35,8 +35,51 @@
 }
 .bigPhone{
     width: 8vw;
+    border-radius: 3%;
 
 }
 .bigEmail{
     width: 8vw;
+    border-radius: 3%;
+}
+.bigPhone:hover{
+    background-color: rgba(0, 133, 2, 0.477);
+    transition: background-color 1s;
+    border: 5px solid;
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 3%;
+}
+.bigEmail:hover{
+    background-color: rgba(0, 133, 2, 0.477);
+    border: 5px solid;
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 3%;
+}
+.list a{
+    text-decoration: none;
+    color: green;
+}
+@media screen and (max-width: 1060px) {
+    .main{
+        display: inline-block;
+        height: 93vh;
+        width: 100vw;
+        padding: 0;
+        padding-top: 15%;
+    }
+    .profile{
+        display: flex;
+        width: 100vw;
+        height: 25vh;
+        margin-bottom: 2px;
+        border-radius: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .bigPhone{
+        width: 14vw;
+    }
+    .bigEmail{
+        width: 14vw;
+    }
 }
