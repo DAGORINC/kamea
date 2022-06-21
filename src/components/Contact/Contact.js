@@ -15,7 +15,7 @@ function Contact() {
                         </div>
                         <div>
                             <ul className={styles.contact}>
-                                <li><img src={phoneImg} />506 721 980</li>
+                                <li className={styles.list}><a href="tel:506 721 980"><img src={phoneImg} />506 721 980</a></li>
                             </ul>
                         </div>
                     </div>
@@ -30,8 +30,8 @@ function Contact() {
                     </div>
                     <div>
                         <ul className={styles.contact}>
-                            <li><img src={phoneImg} />507 952 233</li>
-                            <li><img src={emailImg} /> jackowicz@wp.pl</li>
+                            <li className={styles.list}><a href="tel:507 952 233"><img src={phoneImg} />507 952 233</a></li>
+                            <li className={styles.list}><a href="mailto:jackowicz@wp.pl"><img src={emailImg} /> jackowicz@wp.pl</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ function Contact() {
                         </div>
                         <div>
                             <ul className={styles.contact}>
-                                <li><img src={phoneImg} />514 226 681</li>
+                                <li className={styles.list}><a href="tel:514 226 681"><img src={phoneImg} />514 226 681</a></li>
                             </ul>
                         </div>
                 </div>

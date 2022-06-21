@@ -49,16 +49,20 @@ const desc1 = (
         <h2>Ziemia Popieczarkowa</h2>
         <p className={styles.shortDesc}>doskonale wzbogaca glebę  pod uprawy warzyw, kwiatów, drzewek owocowych, trawników</p>
         <p className={styles.longDesc}>
-            Zalety<br />
-            Ziemia jest przeleżała co sprawia, że jest łatwo przyswajalna a przed dostawą dodatkowo przesiewana dzięki czemu jest sypka, napowietrzona i pozbawiona grudek. Rozkłada się szybko i wydziela sporo ciepła, dlatego jest świetny zwłaszcza do przydomowej szklarni.<br />
-            <br />Zastosowanie<br />
+            <div>                
+            Zalety
+            Ziemia jest przeleżała co sprawia, że jest łatwo przyswajalna a przed dostawą dodatkowo przesiewana dzięki czemu jest sypka, napowietrzona i pozbawiona grudek. Rozkłada się szybko i wydziela sporo ciepła, dlatego jest świetny zwłaszcza do przydomowej szklarni.
+            
+            <ul className={styles.margin}>
+            Zastosowanie:
+            <li className={styles.list}>Wzbogacanie kompostu – podłoże popieczarkowe jest doskonałym dodatkiem do kompostu.</li>
+            <li className={styles.list}>Zatrzymywanie wody – dzięki bardzo dużej zawartości substancji organicznych, podłoże pieczarkowe magazynuje wodę. To zaleta zwłaszcza na glebach piaszczystych.</li>
+            <li className={styles.list}>Nawożenie trawnika – podłoże pieczarkowe można rozsypywać na trawniku. Trawie nie tylko dostarcza azot i inne składniki, ale i poprawia strukturę ziemi oraz magazynuje wodę.</li>
+            <li className={styles.list}>Odkwaszanie gleby – tam, gdzie stosuje się podłoże popieczarkowe, nie ma zwykle potrzeby wapnowania gleby. Ziema pieczarkowa ma pH około 7.</li>
+            </ul>
 
-            -Wzbogacanie kompostu – podłoże popieczarkowe jest doskonałym dodatkiem do kompostu.<br />
-            -Zatrzymywanie wody – dzięki bardzo dużej zawartości substancji organicznych, podłoże pieczarkowe magazynuje wodę. To zaleta zwłaszcza na glebach piaszczystych.<br />
-            -Nawożenie trawnika – podłoże pieczarkowe można rozsypywać na trawniku. Trawie nie tylko dostarcza azot i inne składniki, ale i poprawia strukturę ziemi oraz magazynuje wodę.<br />
-            -Odkwaszanie gleby – tam, gdzie stosuje się podłoże popieczarkowe, nie ma zwykle potrzeby wapnowania gleby. Ziema pieczarkowa ma pH około 7.
 
-
+            </div>
         </p>
     </div>
 );

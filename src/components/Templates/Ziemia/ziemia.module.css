@@ -77,11 +77,16 @@
 .regulation{
     height: 7vh;
 }
+.list{
+    list-style: inside circle;
+}
+.margin{
+    margin-top: 1%;
+}
 
 @media screen and (max-width: 1060px) {
     .shortDesc{
         font-size: 1rem;
-        text-align: center;
     }
     .leftPost{
         display: grid;
@@ -116,9 +121,6 @@
     }
     .transport{
         font-size: 0.95rem;
-        text-align: center;
-    }
-    .longDesc{
         text-align: center;
     }
 
