@@ -31,7 +31,7 @@ function Contact() {
                     <div>
                         <ul className={styles.contact}>
                             <li className={styles.list}><a href="tel:507 952 233"><img src={phoneImg} />507 952 233</a></li>
-                            <li className={styles.list}><a href="mailto:jackowicz@wp.pl"><img src={emailImg} /> jackowicz@wp.pl</a></li>
+                            <li className={styles.list}><a href="mailto:jackowicz@wp.pl"><img src={emailImg} />  jackowicz@wp.pl</a></li>
                         </ul>
                     </div>
                 </div>
