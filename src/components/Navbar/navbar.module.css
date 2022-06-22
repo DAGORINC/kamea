@@ -41,9 +41,23 @@
     margin: 0;
     padding: 0;
 }
+.menulist:active{
+    background-color: aqua;
+}
 .partLink:hover{
     color: rgb(255, 205, 139);
 }
+/* mobile configuration */
+.mobileMain{
+  height: 100vh;
+  width: 65vw;
+  position: fixed;
+  z-index: 1000;
+  background-color: aqua;
+  
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1060px) {
     body{
         font-size: 1rem;
@@ -59,6 +73,7 @@
     }
     .menulist{
         visibility: visible;
+        position: absolute;
         margin-right: 2vw;
         max-height: 50%;
     }
@@ -73,17 +88,5 @@
         margin-right: auto;
     }
     
-  }
-
-  /* mobile configuration */
-  .mobileMain{
-    height: 100vh;
-    width: 70vw;
-    position: fixed;
-    z-index: 1000;
-    background-color: aqua;
-    visibility: hidden;
-  }
-  .menulist:active{
-    visibility: visible;
 }
+
