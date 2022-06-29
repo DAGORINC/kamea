@@ -53,7 +53,7 @@
   width: 85vw;
   position: fixed;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.948);
+  background-color: rgba(0, 0, 0, 0.885);
   transition: margin-left 0.3s ease-out;
 }
 .mobileUl{
@@ -78,6 +78,7 @@
 }
 .mobilePartLink:active{
     color: black;
+    background-color: darkgreen;
 }
 @media screen and (max-width: 1060px) {
     body{
@@ -109,5 +110,21 @@
         margin-right: auto;
     }
     
+}
+@media screen and (min-width: 1070px){
+    .mobileContainer{
+        visibility: hidden;
+    }
+}
+@media screen and (min-device-aspect-ratio: 1060/670){
+    .mobilePartLinkDiv{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .mobilePartLink{
+        padding: 2.5%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
 }
 

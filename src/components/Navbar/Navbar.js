@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 
 
 function Navbar() {
-    const [visibilityMenu, setVisibility] = useState(-2000);
+    const [visibilityMenu, setVisibility] = useState(-1000);
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ function Navbar() {
     }, [isVisible])
 
     const changeVisibility = () => {
-        isVisible ? setVisibility(0) : setVisibility(-2000);
+        isVisible ? setVisibility(0) : setVisibility(-1000);
     }
 
     return (
@@ -23,37 +23,37 @@ function Navbar() {
             <div style={{ marginLeft: visibilityMenu }} className={styles.mobileContainer}>
                 <div className={styles.mobileMenu}>
                     <ul className={styles.mobileUl}>
-                    <li className={styles.mobileListPart}>
-                        <div className={styles.mobilePartLinkDiv}><a href="#kruszywa" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Kruszywa</a></div>
-                    </li>
+                        <li className={styles.mobileListPart}>
+                            <div className={styles.mobilePartLinkDiv}><a href="#kruszywa" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Kruszywa</a></div>
+                        </li>
 
-                    <li className={styles.mobileListPart}>
-                        <div className={styles.mobilePartLinkDiv}><a href="#nawozy" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Nawozy</a></div>
-                    </li>
+                        <li className={styles.mobileListPart}>
+                            <div className={styles.mobilePartLinkDiv}><a href="#nawozy" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Nawozy</a></div>
+                        </li>
 
-                    <li className={styles.mobileListPart}>
-                        <div className={styles.mobilePartLinkDiv}><a href="#ziemia" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Ziemia</a></div>
-                    </li>
+                        <li className={styles.mobileListPart}>
+                            <div className={styles.mobilePartLinkDiv}><a href="#ziemia" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Ziemia</a></div>
+                        </li>
 
-                    <li className={styles.mobileListPart}>
-                        <div className={styles.mobilePartLinkDiv}><a href="#transport" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Transport</a></div>
-                    </li>
+                        <li className={styles.mobileListPart}>
+                            <div className={styles.mobilePartLinkDiv}><a href="#transport" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Transport</a></div>
+                        </li>
 
-                    <li className={styles.mobileListPart}>
-                        <div className={styles.mobilePartLinkDiv}><a href="#findus" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Gdzie nas szukać</a></div>
-                    </li>
+                        <li className={styles.mobileListPart}>
+                            <div className={styles.mobilePartLinkDiv}><a href="#findus" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Gdzie nas szukać</a></div>
+                        </li>
 
-                    <li className={styles.mobileListPart}>
-                        <div className={styles.mobilePartLinkDiv}><a href="#contact" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Kontakt</a></div>
-                    </li>
-                </ul>
+                        <li className={styles.mobileListPart}>
+                            <div className={styles.mobilePartLinkDiv}><a href="#contact" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Kontakt</a></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <div className={styles.menu}>
 
-                <a href="#"><img src={carImg} className={styles.carImg} /></a>
-                <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg} /></a>
+                    <a href="#"><img src={carImg} className={styles.carImg} /></a>
+                    <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg} /></a>
 
                 <ul className={styles.webUl}>
                     <li className={styles.listPart}>
