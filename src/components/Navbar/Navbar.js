@@ -2,26 +2,60 @@ import styles from './navbar.module.css';
 import carImg from '../../assets/images/car.png';
 import subtitleImg from '../../assets/images/subtitle.png';
 import menuIcon from '../../assets/images/menu.svg';
+import { useState, useEffect } from 'react';
 
-function MobileNavbar() {
-    return (
-        <div>
-        </div>
-    )
-}
 
 function Navbar() {
+    const [visibilityMenu, setVisibility] = useState(-2000);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        changeVisibility()
+    }, [isVisible])
+
+    const changeVisibility = () => {
+        isVisible ? setVisibility(0) : setVisibility(-2000);
+    }
+
     return (
         <div className={styles.nav}>
+            {/* mobile elements*/}
+            <div style={{ marginLeft: visibilityMenu }} className={styles.mobileContainer}>
+                <div className={styles.mobileMenu}>
+                    <ul className={styles.mobileUl}>
+                    <li className={styles.mobileListPart}>
+                        <div className={styles.mobilePartLinkDiv}><a href="#kruszywa" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Kruszywa</a></div>
+                    </li>
 
-            <MobileNavbar />
+                    <li className={styles.mobileListPart}>
+                        <div className={styles.mobilePartLinkDiv}><a href="#nawozy" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Nawozy</a></div>
+                    </li>
+
+                    <li className={styles.mobileListPart}>
+                        <div className={styles.mobilePartLinkDiv}><a href="#ziemia" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Ziemia</a></div>
+                    </li>
+
+                    <li className={styles.mobileListPart}>
+                        <div className={styles.mobilePartLinkDiv}><a href="#transport" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Transport</a></div>
+                    </li>
+
+                    <li className={styles.mobileListPart}>
+                        <div className={styles.mobilePartLinkDiv}><a href="#findus" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Gdzie nas szukać</a></div>
+                    </li>
+
+                    <li className={styles.mobileListPart}>
+                        <div className={styles.mobilePartLinkDiv}><a href="#contact" onClick={() => setIsVisible(!isVisible)} className={styles.mobilePartLink}>Kontakt</a></div>
+                    </li>
+                </ul>
+                </div>
+            </div>
 
             <div className={styles.menu}>
 
                 <a href="#"><img src={carImg} className={styles.carImg} /></a>
                 <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg} /></a>
-               
-                <ul>
+
+                <ul className={styles.webUl}>
                     <li className={styles.listPart}>
                         <a href="#kruszywa" className={styles.partLink}>Kruszywa</a>
                     </li>
@@ -48,9 +82,7 @@ function Navbar() {
 
                 </ul>
 
-                <img className={styles.menulist} src={menuIcon}></img>
-            <div id='mobileMain' className={styles.mobileMain}>
-            </div>
+                <img onClick={() => setIsVisible(!isVisible)} className={styles.menulist} src={menuIcon}></img>
             </div>
         </div>
     );
