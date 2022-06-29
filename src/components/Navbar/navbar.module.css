@@ -1,8 +1,8 @@
 .nav{
     position: fixed;
     display: flex;
-    background-color: rgba(0, 80, 0, 0.649);
-    color: white;
+    /* background-color: rgba(0, 80, 0, 0.649); */
+    /* color: white; */
     font-size: medium;
     height: 7vh;
     width: 100%;
@@ -24,17 +24,21 @@
     list-style: none;
 }
 .carImg{
-    height: 8vh;
-    margin: 0 3px 0 3px;
+    height: 6vh;
+    margin: 0 5px 0 20px;
     max-width: 40vw;
 }
 .subtitleImg{
-    height: 1.3vw;
+    height: 0.9vw;
     max-width: 40vw;
 }
 .partLink{
     text-decoration: none;
     color: white;
+}
+.partLink2{
+    text-decoration: none;
+    color: black;
 }
 .menulist{
     visibility: hidden;
@@ -45,6 +49,9 @@
     background-color: rgba(0, 0, 0, 0.455);
 }
 .partLink:hover{
+    color: rgb(255, 205, 139);
+}
+.partLink2:hover{
     color: rgb(255, 205, 139);
 }
 /* mobile configuration */
