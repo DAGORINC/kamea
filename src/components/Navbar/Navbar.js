@@ -21,24 +21,24 @@ function Navbar() {
     //navigation background
     const [fontColor, setFontColor] = useState((styles.partLink));
     const [navigationBackground, setNavigationBackground] = useState('rgba(0, 0, 0, 0.0)');
-    const [backgroundSwapper, setBackground] =useState(false);
+    const [backgroundSwapper, setBackground] = useState(false);
 
     useEffect(() => {
         changeBackground()
-    },[backgroundSwapper])
+    }, [backgroundSwapper])
 
     const changeBackground = () => {
-        (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
-        ?
-        setNavigationBackground('rgba(0, 80, 0, 0.649)')||setFontColor((styles.partLink)) 
-        :
-        setNavigationBackground('rgba(0, 0, 0, 0.0)')||setFontColor((styles.partLink2));
+        (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+            ?
+            setNavigationBackground('rgba(0, 80, 0, 0.649)') || setFontColor((styles.partLink))
+            :
+            setNavigationBackground('rgba(0, 0, 0, 0.0)') || setFontColor((styles.partLink2));
     }
 
-    window.onscroll = function() {changeBackground()};
+    window.onscroll = function () { changeBackground() };
 
     return (
-        <div className={styles.nav} style={{backgroundColor: navigationBackground, color: fontColor}}>
+        <div className={styles.nav} style={{ backgroundColor: navigationBackground, color: fontColor }}>
 
             {/* mobile elements*/}
             <div style={{ marginLeft: visibilityMenu }} className={styles.mobileContainer}>
@@ -76,37 +76,37 @@ function Navbar() {
 
                 </div>
             </div>
-                {/* web elements */}
+            {/* web elements */}
             <div className={styles.menu}>
 
-                    <a href="#"><img src={carImg} className={styles.carImg} /></a>
-                    <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg} /></a>
+                <a href="#"><img src={carImg} className={styles.carImg} /></a>
+                <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg} /></a>
 
 
                 <ul className={styles.webUl}>
 
                     <li className={styles.listPart}>
-                        <a href="#kruszywa"  className={fontColor}>Kruszywa</a>
+                        <a href="#kruszywa" className={fontColor}>Kruszywa</a>
                     </li>
 
                     <li className={styles.listPart}>
-                        <a href="#nawozy"  className={fontColor}>Nawozy</a>
+                        <a href="#nawozy" className={fontColor}>Nawozy</a>
                     </li>
 
                     <li className={styles.listPart}>
-                        <a href="#ziemia"  className={fontColor}>Ziemia</a>
+                        <a href="#ziemia" className={fontColor}>Ziemia</a>
                     </li>
 
                     <li className={styles.listPart}>
-                        <a href="#transport"  className={fontColor}>Transport</a>
+                        <a href="#transport" className={fontColor}>Transport</a>
                     </li>
 
                     <li className={styles.listPart}>
-                        <a href="#findus"  className={fontColor}>Gdzie nas szukać</a>
+                        <a href="#findus" className={fontColor}>Gdzie nas szukać</a>
                     </li>
 
                     <li className={styles.listPart}>
-                        <a href="#contact"  className={fontColor}>Kontakt</a>
+                        <a href="#contact" className={fontColor}>Kontakt</a>
                     </li>
 
                 </ul>
