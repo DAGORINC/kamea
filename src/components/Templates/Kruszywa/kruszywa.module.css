@@ -1,9 +1,10 @@
-.main{
+.main {
     margin-bottom: 7%;
     align-items: center;
     justify-content: center;
 }
-.leftPost .mainImg{
+
+.leftPost .mainImg {
     margin-left: 5%;
     width: 45vw;
     margin-bottom: 5%;
@@ -12,16 +13,19 @@
     border-radius: 10px;
     /* box-shadow: 4px 5px 7px 0px rgb(30, 30, 30); */
 }
-.rightPost .mainImg{
+
+.rightPost .mainImg {
     margin-left: 2%;
     width: 45vw;
     margin-bottom: 5%;
     border-radius: 10px;
 }
-.leftPost{
+
+.leftPost {
     display: flex;
 }
-.leftPost .description{
+
+.leftPost .description {
     width: 45vw;
     margin-left: 2%;
     display: flex;
@@ -29,14 +33,20 @@
     justify-content: center;
     margin-bottom: 5%;
 }
-.general p{
+
+.name,
+.transport {
+    width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: center;
 }
-.rightPost{
+
+.rightPost {
     display: flex;
 }
-.rightPost .description{
+
+.rightPost .description {
     width: 45vw;
     margin-left: 5%;
     display: flex;
@@ -44,85 +54,99 @@
     justify-content: center;
     margin-bottom: 5%;
 }
-.name{
+
+.name {
     font-size: xx-large;
     color: black;
     align-items: center;
     padding-bottom: 0vw;
 }
-.shortDesc{
+
+.shortDesc {
     color: black;
     font-weight: bolder;
     font-size: 1.05rem;
     text-align: center;
-    
+
 }
-.transport{
+
+.transport {
     font-size: 1.1rem;
     padding: 6px;
     padding-bottom: 3vw;
 
 }
-.longDesc{
+
+.longDesc {
     color: grey;
     font-size: 0.95rem;
     text-align: justify;
 }
-.description h2{
+
+.description h2 {
     color: green;
     display: flex;
     justify-content: center;
 }
-.regulation{
+
+.regulation {
     height: 7vh;
 }
-.list{
+
+.list {
     list-style: inside circle;
 }
-.margin{
+
+.margin {
     margin-top: 1%;
 }
 
 @media screen and (max-width: 1060px) {
-    .shortDesc{
+    .shortDesc {
         font-size: 1rem;
     }
-    .leftPost{
+
+    .leftPost {
         display: grid;
         grid-template-rows: 2;
         margin-bottom: 8%;
     }
-    .leftPost .description{
+
+    .leftPost .description {
         grid-row: 1/2;
         width: 90%;
         margin: 0 auto 1% auto;
     }
-    .leftPost .mainImg{
+
+    .leftPost .mainImg {
         grid-row: 2/3;
         width: 90%;
         margin: 0 auto 5% auto;
     }
-    
-    .rightPost{
+
+    .rightPost {
         display: grid;
         grid-template-rows: 2;
         margin-bottom: 8%;
     }
-    .rightPost .description{
+
+    .rightPost .description {
         grid-row: 1/2;
         width: 90%;
         margin: 0 auto 1% auto;
     }
-    .rightPost .mainImg{
+
+    .rightPost .mainImg {
         grid-row: 2/3;
         width: 90%;
         margin: 0 auto 5% auto;
     }
-    .transport{
+
+    .transport {
         font-size: 0.95rem;
         text-align: center;
     }
 
 
-    
+
 }

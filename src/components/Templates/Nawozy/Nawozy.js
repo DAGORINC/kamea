@@ -52,7 +52,7 @@ const desc1 = (
     <div>
         <h2>Podłoże popieczarkowe</h2>
         <p className={styles.shortDesc}></p>
-        <p className={styles.longDesc}>
+        <div className={styles.longDesc}>
             <div>
             Podłoże popieczarkowe to mieszanina kompostowanego
             obornika końskiego, kurzego, słomy oraz torfu. Kompost
@@ -73,14 +73,14 @@ const desc1 = (
             <li className={styles.list}>Magnez - ok. 0,1-0,2%</li>
             </ul>
             </div>
-        </p>
+        </div>
     </div>
 );
 const desc2 = (
     <div>
         <h2>Wapno nawozowe</h2>
         <p className={styles.shortDesc}>Węglanowe z Kopalni Morawica</p>
-        <p className={styles.longDesc}>
+        <div className={styles.longDesc}>
             <div>
             <ul>
             Skład wapna:
@@ -92,7 +92,7 @@ const desc2 = (
             <li className={styles.list}>reaktywność – 88%</li>
             </ul>
             </div>
-        </p>
+        </div>
 
     </div>
 );
@@ -100,7 +100,7 @@ const desc3 = (
     <div>
         <h2>Wapno magnezowe</h2>
         <p className={styles.shortDesc}>Dolomitowe, barwy szarej, żółtej, czerwonej z Kopalni Jaźwica, Laskowa, Winna, Wszachów, Imielin</p>
-        <p className={styles.longDesc}>
+        <div className={styles.longDesc}>
             <ul>
             Skład wapna:
             <li className={styles.list}>CaCO3- węglan wapnia  57-62%</li>
@@ -110,7 +110,7 @@ const desc3 = (
             <li className={styles.list}>MgO- tlenek magnezu- 18-22%,</li>
             <li className={styles.list}>CaO - tlenek wapnia  30-32%</li>
             </ul>
-        </p>
+        </div>
 
     </div>
 );
@@ -118,16 +118,16 @@ const desc4 = (
     <div>
         <h2>Obornik koński</h2>
         <p className={styles.shortDesc}>Uznany jest za najlepszy  do nawożenia</p>
-        <p className={styles.longDesc}>Ma dużo substancji organicznych, sprzyja nagrzewaniu gleby, ma sporo azotu, odkwasza glebę, szybko się rozkłada. Nawóz koński był najbardziej polecany na zasilania warzyw już w XIX wieku. Niestety ze względu na dbałość o czystość w stajniach jest w tej chwili bardzo słomiasty i raczej nadaje się do ściółkowania niż do nawożenia.
-        </p>
+        <div className={styles.longDesc}>Ma dużo substancji organicznych, sprzyja nagrzewaniu gleby, ma sporo azotu, odkwasza glebę, szybko się rozkłada. Nawóz koński był najbardziej polecany na zasilania warzyw już w XIX wieku. Niestety ze względu na dbałość o czystość w stajniach jest w tej chwili bardzo słomiasty i raczej nadaje się do ściółkowania niż do nawożenia.
+        </div>
     </div>
 );
 const desc5 = (
     <div>
         <h2>Obornik bydlęcy</h2>
         <p className={styles.shortDesc}></p>
-        <p className={styles.longDesc}>Stosuje się go na różnych glebach, ale polecany jest na podłoża piaszczyste, w których składniki pokarmowe szybko są wymywane.
-        </p>
+        <div className={styles.longDesc}>Stosuje się go na różnych glebach, ale polecany jest na podłoża piaszczyste, w których składniki pokarmowe szybko są wymywane.
+        </div>
 
     </div>
 );
@@ -135,8 +135,8 @@ const desc6 = (
     <div>
         <h2>Obornik popieczarkowy</h2>
         <p className={styles.shortDesc}>Popieczarkowy to nazwa przekompostowanego podłoża popieczarkowego</p>
-        <p className={styles.longDesc}> Średnio jeden metr sześcienny świeżego podłoża to odpowiednik 2,3 obornika bydlęcego, dodatkowo nie zawiera siewek chwastów. Mimo że produkt sam w sobie jest odpadem, może skutecznie pomóc nam w uzupełnieniu braków wspomnianej materii organicznej, jak i wnieść znaczne ilości NPK i mikroskładników. . Rozkłada się szybko i wydziela sporo ciepła, dlatego jest świetny zwłaszcza do przydomowej szklarni. Azotu zawiera zwykle więcej niż nawóz krów. Dzięki temu, że  nie ma zbyt intensywnego zapachu,jest lepszy niż kurzak
-        </p>
+        <div className={styles.longDesc}> Średnio jeden metr sześcienny świeżego podłoża to odpowiednik 2,3 obornika bydlęcego, dodatkowo nie zawiera siewek chwastów. Mimo że produkt sam w sobie jest odpadem, może skutecznie pomóc nam w uzupełnieniu braków wspomnianej materii organicznej, jak i wnieść znaczne ilości NPK i mikroskładników. . Rozkłada się szybko i wydziela sporo ciepła, dlatego jest świetny zwłaszcza do przydomowej szklarni. Azotu zawiera zwykle więcej niż nawóz krów. Dzięki temu, że  nie ma zbyt intensywnego zapachu,jest lepszy niż kurzak
+        </div>
 
     </div>
 );

@@ -49,7 +49,7 @@ const desc1 = (
     <div>
         <h2>Ziemia Popieczarkowa</h2>
         <p className={styles.shortDesc}>doskonale wzbogaca glebę  pod uprawy warzyw, kwiatów, drzewek owocowych, trawników</p>
-        <p className={styles.longDesc}>
+        <div className={styles.longDesc}>
             <div>                
             Zalety
             Ziemia jest przeleżała co sprawia, że jest łatwo przyswajalna a przed dostawą dodatkowo przesiewana dzięki czemu jest sypka, napowietrzona i pozbawiona grudek. Rozkłada się szybko i wydziela sporo ciepła, dlatego jest świetny zwłaszcza do przydomowej szklarni.
@@ -64,16 +64,16 @@ const desc1 = (
 
 
             </div>
-        </p>
+        </div>
     </div>
 );
 const desc2 = (
     <div>
         <h2>Ziemia ogrodowa</h2>
         <p className={styles.shortDesc}>Ziemia przesiewana</p>
-        <p className={styles.longDesc}>
+        <div className={styles.longDesc}>
             Ziemię przed dostawą przesiewamy na przesiewaczu bębnowym, co sprawia , że jest ona wolna od zanieczyszczeń, sypka i napowietrzona. Możemy wykonać na Wasze zamówienie mieszankę ziemi o dowolnym składzie używając torfu, ziemi polnej, ziemi pieczarkowej, piasku.
-        </p>
+        </div>
 
     </div>
 );
@@ -81,10 +81,10 @@ const desc3 = (
     <div>
         <h2>Torf</h2>
         <p className={styles.shortDesc}>Torf niski o pH od 5 do 7 w zależności od torfowiska z którego jest pozyskany</p>
-        <p className={styles.longDesc}>
+        <div className={styles.longDesc}>
             Oferujemy torf z dowozem zestawami o pojemności 30-35 m3 z dowozem na terenie całego kraju, oraz mniejsze dostawy wywrotkami od 1 do 12m3 z naszych składów w Zakręcie oraz Mlęcinie.
             Torf na życzenie klienta może być przesiewany.
-        </p>
+        </div>
 
     </div>
 );
