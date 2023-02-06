@@ -1,11 +1,12 @@
 import styles from './ziemia.module.css';
-import i3 from '../../../assets/images/k3.jpg';
-import i4 from '../../../assets/images/k4.jpg';
+import ziemiaPopieczarkowa from '../../../assets/images/ziemiaPopieczarkowa.JPG';
+import ziemiaOgrodowa from '../../../assets/images/ziemiaOgrodowa.JPG';
+import torf from '../../../assets/images/torf.jpg';
 
 function LeftPost(props) {
     return (
         <div className={styles.leftPost}>
-            <img src={props.image} className={styles.mainImg} />
+            <img src={props.image} className={styles.mainImg} alt={'aggregate'}/>
             <div className={styles.description}>
                 {props.description}
             </div>
@@ -19,7 +20,7 @@ function RightPost(props) {
             <div className={styles.description}>
                 {props.description}
             </div>
-            <img src={props.image} className={styles.mainImg} />
+            <img src={props.image} className={styles.mainImg} alt={'aggregate'}/>
         </div>
     );
 }
@@ -34,9 +35,9 @@ export default function Ziemia() {
                     <p className={styles.name}>Ziemia</p>
                     <p className={styles.transport}></p>
                     <div className={styles.main}>
-                        <LeftPost image={i3} description={desc1} />
-                        <RightPost image={i4} description={desc2} />
-                        <LeftPost image={i3} description={desc3} />
+                        <LeftPost image={ziemiaPopieczarkowa} description={desc1} />
+                        <RightPost image={ziemiaOgrodowa} description={desc2} />
+                        <LeftPost image={torf} description={desc3} />
                     </div>
                 </div>
             </div>

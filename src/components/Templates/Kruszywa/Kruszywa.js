@@ -1,13 +1,17 @@
 import styles from './kruszywa.module.css';
-import k3 from '../../../assets/images/k3.jpg';
-import k4 from '../../../assets/images/k4.jpg';
+import kryszywaDrobne from '../../../assets/images/kruszywoDrobne.jpg';
+import kryszywaGruboziarniste from '../../../assets/images/kruszywoGruboziarniste.jpg';
+import kruszywaOzdobne from '../../../assets/images/kruszywaOzdobne.jpg';
+import pospolka from '../../../assets/images/pospolka.jpg';
+import piasekDoPiaskownicy from '../../../assets/images/piasekDoPiaskownicy.jpg';
+import grys from '../../../assets/images/grys.jpg';
 
 
 
 function LeftPost(props) {
     return (
         <div className={styles.leftPost}>
-            <img src={props.image} className={styles.mainImg} />
+            <img src={props.image} className={styles.mainImg} alt={'aggregate'} />
             <div className={styles.description}>
                 {props.description}
             </div>
@@ -21,7 +25,7 @@ function RightPost(props) {
             <div className={styles.description}>
                 {props.description}
             </div>
-            <img src={props.image} className={styles.mainImg} />
+            <img src={props.image} className={styles.mainImg} alt={'aggregate'} />
         </div>
     );
 }
@@ -29,8 +33,7 @@ function RightPost(props) {
 export default function Kruszywa() {
     return (
         <div>
-            <div className={styles.regulation} id="kruszywa" /
-            >
+            <div className={styles.regulation} id="kruszywa" />
             <div className={styles.general}>
 
                 <p className={styles.name}>KRUSZYWA</p>
@@ -39,19 +42,20 @@ export default function Kruszywa() {
                 </p>
 
                 <div className={styles.main} >
-                    <LeftPost image={k3} description={desc1} />
-                    <RightPost image={k4} description={desc2} />
-                    <LeftPost image={k3} description={desc3} />
-                    <RightPost image={k4} description={desc4} />
-                    <LeftPost image={k3} description={desc5} />
-                    <RightPost image={k4} description={desc6} />
+                    <LeftPost image={kryszywaDrobne} description={desc1} />
+                    <RightPost image={kryszywaGruboziarniste} description={desc2} />
+                    <LeftPost image={pospolka} description={desc3} />
+                    <RightPost image={piasekDoPiaskownicy} description={desc4} />
+                    <LeftPost image={grys} description={desc5} />
+                    <RightPost image={kruszywaOzdobne} description={desc6} />
                 </div>
 
             </div>
 
         </div>
-    );
+    )
 }
+
 const desc1 = (
     <div>
         <h2>Kruszywo drobne</h2>

@@ -1,11 +1,15 @@
 import styles from './nawozy.module.css';
-import i3 from '../../../assets/images/k3.jpg';
-import i4 from '../../../assets/images/k4.jpg';
+import popieczarkowe from '../../../assets/images/popieczarkowe.JPG';
+import wapnoNawozowe from '../../../assets/images/wapnoNawozowe.JPG';
+import wapnoMagnezowe from '../../../assets/images/wapnoMagnezowe.JPG';
+import obornikKonski from '../../../assets/images/obornikKonski.JPG';
+import obornikBydlecy from '../../../assets/images/obornikBydlecy.JPG';
+import obornikPopieczarkowy from '../../../assets/images/obornikPopieczarkowy.JPG';
 
 function LeftPost(props) {
     return (
         <div className={styles.leftPost}>
-            <img src={props.image} className={styles.mainImg} />
+            <img src={props.image} className={styles.mainImg} alt={'aggregate'}/>
             <div className={styles.description}>
                 {props.description}
             </div>
@@ -19,7 +23,7 @@ function RightPost(props) {
             <div className={styles.description}>
                 {props.description}
             </div>
-            <img src={props.image} className={styles.mainImg} />
+            <img src={props.image} className={styles.mainImg} alt={'aggregate'} />
         </div>
     );
 }
@@ -33,12 +37,12 @@ export default function Nawozy() {
                 <p className={styles.name}>Nawozy</p>
                 <p className={styles.transport}></p>
                 <div className={styles.main}>
-                    <LeftPost image={i3} description={desc1} />
-                    <RightPost image={i4} description={desc2} />
-                    <LeftPost image={i3} description={desc3} />
-                    <RightPost image={i4} description={desc4} />
-                    <LeftPost image={i3} description={desc5} />
-                    <RightPost image={i4} description={desc6} />
+                    <LeftPost image={popieczarkowe} description={desc1} />
+                    <RightPost image={wapnoNawozowe} description={desc2} />
+                    <LeftPost image={wapnoMagnezowe} description={desc3} />
+                    <RightPost image={obornikKonski} description={desc4} />
+                    <LeftPost image={obornikBydlecy} description={desc5} />
+                    <RightPost image={obornikPopieczarkowy} description={desc6} />
                 </div>
             </div>
         </div>
