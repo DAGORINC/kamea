@@ -4,8 +4,12 @@
     color: white;
     text-align: center;
     min-height: 20px;
+    display: flex;
+    justify-content: center;
 }
 .emailLink{
+    font-weight: lighter;
     text-decoration: none;
     color: white;
+    margin-left: 10px;
 }
