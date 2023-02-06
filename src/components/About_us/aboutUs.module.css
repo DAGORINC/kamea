@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     padding: 100px 100px 100px 100px;
     color: rgb(106, 106, 106);
+    justify-content: center;
 }
 
 .tag{
@@ -28,6 +29,7 @@
     padding: 3%;
     width: 50%;
     text-align: justify;
+    max-width: 600px;
 }
 
 .topDescription{
