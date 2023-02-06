@@ -15,7 +15,7 @@ function About_us() {
 
                 <div className={styles.description}>
 
-                    Firma powstała w roku 1995 i od tego czasu świadczy usługi transportowe
+                    Firma powstała w roku 2008 i od tego czasu świadczy usługi transportowe
                     na terenie całego kraju. Specjalizujemy się w transporcie kruszyw, a także posiadamy własny skład kruszyw.
 
                 </div>
