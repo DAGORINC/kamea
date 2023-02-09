@@ -69,3 +69,8 @@
     }
 }
 
+@media screen and (max-width: 340px) {
+    .text1, .text2{
+        text-align: left;
+    }
+}
