@@ -1,4 +1,4 @@
-.main{
+.main {
     padding: 1% 10% 1% 10%;
     background-color: rgba(0, 80, 0, 0.649);
     height: 60vh;
@@ -7,7 +7,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.profile{
+
+.profile {
     padding: 3%;
     background-color: antiquewhite;
     height: 90%;
@@ -18,49 +19,59 @@
     border-radius: 10px;
     text-align: center;
 }
-.regulation{
+
+.regulation {
     height: 7vh;
 }
-.name{
+
+.name {
     height: 30%;
     width: 100%;
 }
-.contact{
+
+.contact {
     list-style: none;
     height: 30%;
     width: 100%;
 }
-.list{
+
+.list {
     color: green;
 }
-.bigPhone{
+
+.bigPhone {
     width: 8vw;
     border-radius: 3%;
 
 }
-.bigEmail{
+
+.bigEmail {
     width: 8vw;
     border-radius: 3%;
 }
-.bigPhone:hover{
+
+.bigPhone:hover {
     background-color: rgba(0, 133, 2, 0.477);
     transition: background-color 1s;
     border: 5px solid;
     border-color: rgba(240, 248, 255, 0);
     border-radius: 3%;
 }
-.bigEmail:hover{
+
+.bigEmail:hover {
     background-color: rgba(0, 133, 2, 0.477);
     border: 5px solid;
     border-color: rgba(240, 248, 255, 0);
     border-radius: 3%;
 }
-.list a{
+
+.list a {
     text-decoration: none;
     color: green;
 }
+
 @media screen and (max-width: 1060px) {
-    .main{
+    .main {
         display: inline-block;
         height: 200vw;
         min-height: 93vh;
@@ -69,7 +80,8 @@
         padding: 0;
         padding-top: 15%;
     }
-    .profile{
+
+    .profile {
         display: flex;
         width: 99.99vw;
         height: 60vw;
@@ -79,10 +91,12 @@
         align-items: center;
         justify-content: center;
     }
-    .bigPhone{
+
+    .bigPhone {
         width: 14vw;
     }
-    .bigEmail{
+
+    .bigEmail {
         width: 10vw;
     }
 }
