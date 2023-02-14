@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 function Navbar() {
     // mobile menu visibility
-    const [visibilityMenu, setVisibility] = useState(-1000);
+    const [visibilityMenu, setVisibility] = useState('-100vw');
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -15,17 +15,16 @@ function Navbar() {
     }, [isVisible])
 
     const changeVisibility = () => {
-        isVisible ? setVisibility(0) : setVisibility(-1000);
+        isVisible ? setVisibility(0) : setVisibility('-100vw');
     }
 
     //navigation background
     const [fontColor, setFontColor] = useState((styles.partLink));
     const [navigationBackground, setNavigationBackground] = useState('rgba(0, 0, 0, 0.0)');
-    const [backgroundSwapper, setBackground] = useState(false);
 
     useEffect(() => {
         changeBackground()
-    }, [backgroundSwapper])
+    }, [])
 
     const changeBackground = () => {
         (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
@@ -41,7 +40,7 @@ function Navbar() {
         <div className={styles.nav} style={{ backgroundColor: navigationBackground, color: fontColor }}>
 
             {/* mobile elements*/}
-            <div style={{ marginLeft: visibilityMenu }} className={styles.mobileContainer}>
+            <div style={{ marginLeft: visibilityMenu }} onClick={() => setIsVisible(false)} className={styles.mobileContainer}>
 
                 <div className={styles.mobileMenu}>
 
@@ -79,9 +78,10 @@ function Navbar() {
             {/* web elements */}
             <div className={styles.menu}>
 
-                <a href="#"><img src={carImg} className={styles.carImg} /></a>
-                <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg} /></a>
-
+                <div className={styles.logoContainer}>
+                    <a href="#"><img src={carImg} className={styles.carImg} /></a>
+                    <a href="#" className={styles.aText}><img src={subtitleImg} className={styles.subtitleImg} /></a>
+                </div>
 
                 <ul className={styles.webUl}>
 

@@ -1,77 +1,102 @@
-.nav{
+.nav {
     position: fixed;
     display: flex;
-    /* background-color: rgba(0, 80, 0, 0.649); */
-    /* color: white; */
     font-size: medium;
     height: 7vh;
     width: 100%;
+    min-height: 40px;
 }
-.menu{
+
+.menu {
     height: 100%;
     width: 100%;
     display: inline-flex;
     align-items: center;
 }
-.menu ul{
+
+.menu ul {
     padding-left: 10%;
     padding-right: 10%;
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
 }
-.menu li{
+
+.menu li {
     list-style: none;
 }
-.carImg{
-    height: 6vh;
-    margin: 0 5px 0 20px;
-    max-width: 40vw;
+
+.carImg {
+    height: 25px;
+    padding: 0 5px;
 }
-.subtitleImg{
-    height: 0.9vw;
-    max-width: 40vw;
+
+.subtitleImg {
+    max-height: 18px;
+    max-width: 50vw;
 }
-.partLink{
+
+.logoContainer {
+    height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.partLink {
     text-decoration: none;
     color: white;
 }
-.partLink2{
+
+.partLink2 {
     text-decoration: none;
     color: black;
 }
-.menulist{
+
+.menulist {
     visibility: hidden;
     margin: 0;
     padding: 0;
 }
-.menulist:active{
+
+.menulist:active {
     background-color: rgba(0, 0, 0, 0.455);
 }
-.partLink:hover{
+
+.partLink:hover {
     color: rgb(255, 205, 139);
 }
-.partLink2:hover{
+
+.partLink2:hover {
     color: rgb(255, 205, 139);
 }
+
 /* mobile configuration */
-.mobileContainer{
-  height: 100vh;
-  width: 85vw;
-  position: fixed;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.885);
-  transition: margin-left 0.3s ease-out;
+.mobileContainer {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition: margin-left 0.3s ease-out;
 }
-.mobileUl{
+
+.mobileMenu{
+    width: 85vw;
+    background-color: rgba(0, 0, 0, 0.885);
+    height: 100vh;
+}
+
+.mobileUl {
     text-align: center;
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.152);
 }
-.mobileListPart{
+
+.mobileListPart {
     border-bottom: 1px solid rgba(255, 255, 255, 0.152);
 }
-.mobilePartLink{
+
+.mobilePartLink {
     border-top: 10%;
     padding: 5%;
     padding-left: 25%;
@@ -79,59 +104,54 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.727);
 }
-.mobilePartLinkDiv{
+
+.mobilePartLinkDiv {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.mobilePartLink:active{
+
+.mobilePartLink:active {
     color: black;
     background-color: darkgreen;
 }
+
 @media screen and (max-width: 1060px) {
-    body{
+    body {
         font-size: 1rem;
     }
-    .nav .webUl{
+
+    .nav .webUl {
         visibility: collapse;
         width: 0;
         justify-content: center;
     }
-    .menu{
-        justify-content: flex-end;
-        display: flex;
-    }
-    .menulist{
+
+    .menulist {
+        height: 22px;
         visibility: visible;
         position: absolute;
-        margin-right: 2vw;
-        max-height: 50%;
+        right: 20px;
+        /* top: 15px; */
     }
-    .carImg{
-        justify-content: start;
-        height: 3rem;
-    }
-    .subtitleImg{
-        height: 1.2rem;
-    }
-    .nav .aText{
-        margin-right: auto;
-    }
-    
+
+
 }
-@media screen and (min-width: 1070px){
-    .mobileContainer{
+
+@media screen and (min-width: 1070px) {
+    .mobileContainer {
         visibility: hidden;
     }
 }
-@media screen and (min-device-aspect-ratio: 1060/670){
-    .mobilePartLinkDiv{
+
+@media screen and (min-device-aspect-ratio: 1060/670) {
+    .mobilePartLinkDiv {
         margin-top: 2%;
         margin-bottom: 2%;
     }
-    .mobilePartLink{
+
+    .mobilePartLink {
         padding: 2.5%;
         padding-left: 25%;
         padding-right: 25%;
     }
 }
-
