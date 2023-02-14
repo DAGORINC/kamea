@@ -160,3 +160,9 @@
         padding-right: 25%;
     }
 }
+
+@media screen and (max-width: 281px){
+    .mobileListPart{
+        font-size: 14px;
+    }
+}
