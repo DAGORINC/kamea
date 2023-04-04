@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div className={styles.container}>
             <div className={styles.bottomContainer}>
-                © Kamea {date.getFullYear()}<a className={styles.emailLink} href="mailto:DAMIAN.G.PG@GMAIL.COM"> | Projekt i realizacja:  Damian Gorzkowski</a>
+                © Kamea {date.getFullYear()}<a className={styles.emailLink} href="mailto:DAMIAM.G.PG@GMAIL.COM"> | Projekt i realizacja:  Damian Gorzkowski</a>
             </div>
         </div>
     );
